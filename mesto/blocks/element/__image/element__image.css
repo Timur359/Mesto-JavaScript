@@ -1,0 +1,9 @@
+.element__image {
+    max-width: 282px;
+    min-width: 282px;
+    transition: opacity .3s ease;
+}
+
+.element__image:hover {
+    opacity: .5;
+}
