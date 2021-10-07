@@ -21,6 +21,6 @@
 
 ---
 
-[Ссылка на проект](https://andreysdrv.github.io/mesto/)
+[Ссылка на проект](https://timur359.github.io/mesto-project/)
 
 ---
