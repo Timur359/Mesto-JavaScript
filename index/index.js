@@ -9,17 +9,28 @@ const aboutField = document.querySelector('.popup__input_about');
 const profileAbout = document.querySelector('.profile__about');
 
 
+
 function openPopup() {
-    popup.classList.add('popup__isOpen'); 
+    popup.classList.add('popup__open'); 
+    nameField.value = profileName.textContent;
+    aboutField.value = profileAbout.textContent;
 }
 
 function closePopup() {
-    popup.classList.remove('popup__isOpen'); 
+    popup.classList.remove('popup__open'); 
 }
 
 editButton.addEventListener('click', openPopup);
 
 popupCloseButton.addEventListener('click', closePopup);
+
+/*function setUserInfo(data) {
+    data.preventDefault();
+    nameField.textContent = data.nameField;
+    aboutField.textContent = data.aboutField;
+}
+
+form.addEventListener('submit', setUserInfo);*/
 
 function submitForm(event) {
     event.preventDefault();
@@ -29,4 +40,6 @@ function submitForm(event) {
 }
 
 form.addEventListener('submit', submitForm);
+
+
 
