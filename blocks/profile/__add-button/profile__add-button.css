@@ -2,7 +2,6 @@
     background-image: url('../../../image/add__button.svg');
     width: 150px;
     height: 50px;
-    color: white;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,20 +17,20 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 915px) {
     .profile__add-button {
         margin-right: auto;
     }
-}
+}*/
 
-@media screen and (max-width: 643px) {
+@media screen and (max-width: 915px) {
     .profile__add-button {
-        min-width: 570px;
+        min-width: 450px;
         margin: 36px auto 0 auto;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 660px) {
     .profile__add-button {
         min-width: 282px;
     }
