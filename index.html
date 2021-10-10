@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Место</title>
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__logo"></div>
+    </header>
+
+    <main class="main">
+        <section class="profile">
+            <div class="profile__avatar"></div>
+            <div class="profile__info">
+                <div class="profile__container">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit-button" aria-label="Изменить информацию о себе"></button>
+                </div>
+                <h2 class="profile__about">Исследователь океана</h2>
+            </div>
+            <button type="button" class="profile__add-button" aria-label="Добавить место"></button>
+        </section>
+
+        <section class="elements">
+            <div class="element">
+                <img class="element__image" src="image/image__karachaevo.png" alt="Карачаевск">
+                <div class="element__card-container">
+                    <h2 class="element__text">Карачаевск</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="image/image__elbrus.png" alt="Гора Эльбрус">
+                <div class="element__card-container">
+                    <h2 class="element__text">Гора Эльбрус</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="image/image__dombay.png" alt="Домбай">
+                <div class="element__card-container">
+                    <h2 class="element__text">Домбай</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="image/image__elbrus.png" alt="Гора Эльбрус">
+                <div class="element__card-container">
+                    <h2 class="element__text">Гора Эльбрус</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="image/image__dombay.png" alt="Домбай">
+                <div class="element__card-container">
+                    <h2 class="element__text">Домбай</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+            <div class="element">
+                <img class="element__image" src="image/image__karachaevo.png" alt="Карачаево-Черкесия">
+                <div class="element__card-container">
+                    <h2 class="element__text">Карачаево-Черкесия</h2>
+                    <button type="button" class="element__like-button"></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2021 Mesto Russia</p>
+
+    </footer>
+
+    <div class="popup">
+        <div class="popup__content">
+            <button type="button" class="popup__close" aria-label="Закрыть редактирование профиля"></button>
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form name="popupForm" class="popup__form">
+                <input name="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" required>
+                <input name="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="Профессия" required>
+                <button type="submit" class="popup__button" aria-label="Сохранить">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <script src="pages/index.js"></script>
+
+</body>
+
+</html>
