@@ -9,12 +9,6 @@
     padding: 0;
 }
 
-/*@media screen and (max-width: 635px) {
-    .elements {
-        margin: 0;
-    }
-}*/
-
 @media screen and (max-width: 915px) {
     .elements {
       width: 88%;
