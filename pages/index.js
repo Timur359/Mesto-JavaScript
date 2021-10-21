@@ -150,6 +150,7 @@ function createElement(item) {
     elementList.querySelector('.element__image').addEventListener('click', (card) => {
         openPopup(popupZoom)
         imageZoom.src = card.target.src;
+        imageZoom.alt = card.target.alt;
         altZoom.textContent = card.target.alt;
 
     })
