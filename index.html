@@ -27,68 +27,58 @@
         </section>
 
         <section class="elements">
-            <div class="element">
-                <img class="element__image" src="image/image__karachaevo.png" alt="Карачаевск">
-                <div class="element__card-container">
-                    <h2 class="element__text">Карачаевск</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="image/image__elbrus.png" alt="Гора Эльбрус">
-                <div class="element__card-container">
-                    <h2 class="element__text">Гора Эльбрус</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="image/image__dombay.png" alt="Домбай">
-                <div class="element__card-container">
-                    <h2 class="element__text">Домбай</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="image/image__elbrus.png" alt="Гора Эльбрус">
-                <div class="element__card-container">
-                    <h2 class="element__text">Гора Эльбрус</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="image/image__dombay.png" alt="Домбай">
-                <div class="element__card-container">
-                    <h2 class="element__text">Домбай</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__image" src="image/image__karachaevo.png" alt="Карачаево-Черкесия">
-                <div class="element__card-container">
-                    <h2 class="element__text">Карачаево-Черкесия</h2>
-                    <button type="button" class="element__like-button"></button>
-                </div>
-            </div>
+
         </section>
 
     </main>
 
     <footer class="footer">
         <p class="footer__text">&copy; 2021 Mesto Russia</p>
-
     </footer>
 
-    <div class="popup">
-        <div class="popup__content">
-            <button type="button" class="popup__close" aria-label="Закрыть редактирование профиля"></button>
+    <div class="popup popup_edit">
+        <div class="popup__content_all">
+            <button type="button" class="popup__close popup__close_edit" aria-label="Закрыть редактирование профиля"></button>
             <h3 class="popup__title">Редактировать профиль</h3>
-            <form name="popupForm" class="popup__form">
+            <form name="popupForm" class="popup__form popup__form_edit">
                 <input name="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" required>
                 <input name="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="Профессия" required>
                 <button type="submit" class="popup__button" aria-label="Сохранить">Сохранить</button>
             </form>
         </div>
     </div>
+
+    <div class="popup popup_add">
+        <div class="popup__content_all">
+            <button type="button" class="popup__close popup__close_add" aria-label="Закрыть"></button>
+            <h3 class="popup__title">Новое место</h3>
+            <form name="popupForm" class="popup__form popup__form_add">
+                <input name="nameImage" type="text" class="popup__input popup__input_place_name" placeholder="Название" required>
+                <input name="urlImage" type="text" class="popup__input popup__input_place_url" placeholder="Ссылка на картинку" required>
+                <button type="submit" class="popup__button" aria-label="Сохранить">Создать</button>
+            </form>
+        </div>
+    </div>
+
+    <template id="template">
+        <div class="element">
+            <img class="element__image" src="image/image__dombay.png" alt="Домбай">
+            <div class="element__card-container">
+                <h2 class="element__text">Домбай</h2>
+                <button type="button" class="element__button_like" aria-label="Лайк"></button>
+                <button type="button" class="element__button_delete" aria-label="Удалить"></button>
+            </div>
+        </div>
+    </template>
+
+    <div class="popup popup_zoom">
+        <div class="popup__content_zoom">
+            <img class="popup__image_zoom" src="#" alt="Домбай">
+            <figcaption class="popup__figcaption"></figcaption>
+            <button type="button" class="popup__close popup__close_zoom" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
     <script src="pages/index.js"></script>
 
 </body>
