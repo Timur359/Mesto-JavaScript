@@ -35,25 +35,32 @@
         <p class="footer__text">&copy; 2021 Mesto Russia</p>
     </footer>
 
+
     <div class="popup popup_edit">
+        <a class="popup__overlay"></a>
         <div class="popup__content">
             <button type="button" class="popup__close popup__close_edit" aria-label="Закрыть редактирование профиля"></button>
             <h3 class="popup__title">Редактировать профиль</h3>
-            <form name="popupForm" class="popup__form popup__form_edit">
-                <input name="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" required>
-                <input name="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="Профессия" required>
+            <form name="popupForm" class="popup__form popup__form_edit" novalidate>
+                <input id="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" minlength="2" maxlength="40" required>
+                <span class="popup__input-error userName-error"></span>
+                <input id="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="О себе" minlength="2" maxlength="200" required>
+                <span class="popup__input-error userAbout-error"></span>
                 <button type="submit" class="popup__button" aria-label="Сохранить">Сохранить</button>
             </form>
         </div>
     </div>
 
     <div class="popup popup_add">
+        <a class="popup__overlay"></a>
         <div class="popup__content">
             <button type="button" class="popup__close popup__close_add" aria-label="Закрыть"></button>
             <h3 class="popup__title">Новое место</h3>
-            <form name="popupForm" class="popup__form popup__form_add">
-                <input name="nameImage" type="text" class="popup__input popup__input_place_name" placeholder="Название" required>
-                <input name="urlImage" type="text" class="popup__input popup__input_place_url" placeholder="Ссылка на картинку" required>
+            <form name="popupForm" class="popup__form popup__form_add" novalidate>
+                <input id="nameImage" type="text" class="popup__input popup__input_place_name" placeholder="Название" minlength="2" maxlength="30" required>
+                <span class="popup__input-error nameImage-error"></span>
+                <input id="urlImage" type="url" class="popup__input popup__input_place_url" placeholder="Ссылка на картинку" required>
+                <span class="popup__input-error urlImage-error"></span>
                 <button type="submit" class="popup__button" aria-label="Сохранить">Создать</button>
             </form>
         </div>
@@ -71,6 +78,7 @@
     </template>
 
     <div class="popup popup_zoom">
+        <a class="popup__overlay"></a>
         <div class="popup__figure-container">
             <figure class="popup__figure">
                 <img class="popup__image" src="#" alt="#">
@@ -81,6 +89,7 @@
     </div>
 
     <script src="pages/index.js"></script>
+    <script src="pages/validity.js"></script>
 
 </body>
 
