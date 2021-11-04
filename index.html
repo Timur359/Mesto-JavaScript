@@ -43,9 +43,9 @@
             <h3 class="popup__title">Редактировать профиль</h3>
             <form name="popupForm" class="popup__form popup__form_edit" novalidate>
                 <input id="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" minlength="2" maxlength="40" required>
-                <span class="popup__input-error userName-error"></span>
+                <span class="popup__input-error" id="userName-error"></span>
                 <input id="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="О себе" minlength="2" maxlength="200" required>
-                <span class="popup__input-error userAbout-error"></span>
+                <span class="popup__input-error" id="userAbout-error"></span>
                 <button type="submit" class="popup__button" aria-label="Сохранить">Сохранить</button>
             </form>
         </div>
@@ -58,9 +58,9 @@
             <h3 class="popup__title">Новое место</h3>
             <form name="popupForm" class="popup__form popup__form_add" novalidate>
                 <input id="nameImage" type="text" class="popup__input popup__input_place_name" placeholder="Название" minlength="2" maxlength="30" required>
-                <span class="popup__input-error nameImage-error"></span>
+                <span class="popup__input-error" id="nameImage-error"></span>
                 <input id="urlImage" type="url" class="popup__input popup__input_place_url" placeholder="Ссылка на картинку" required>
-                <span class="popup__input-error urlImage-error"></span>
+                <span class="popup__input-error" id="urlImage-error"></span>
                 <button type="submit" class="popup__button" aria-label="Сохранить">Создать</button>
             </form>
         </div>
@@ -88,8 +88,10 @@
         </div>
     </div>
 
-    <script src="pages/index.js"></script>
-    <script src="pages/validity.js"></script>
+    <script src="scripts/initial-cards.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/validity.js"></script>
+    <script src="scripts/index.js"></script>
 
 </body>
 
