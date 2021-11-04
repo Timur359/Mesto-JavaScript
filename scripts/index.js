@@ -37,6 +37,14 @@ function openPopup(popup) {
 
 function closePopup(popup) {
     popup.classList.remove('popup_open');
+    const spanTextError = [...document.querySelectorAll('.popup__input-error')];
+    spanTextError.forEach((span) => {
+        span.textContent = '';
+    });
+    const inputBorder = [...document.querySelectorAll('.popup__input')];
+    inputBorder.forEach((input) => {
+        input.classList.remove('popup__input_type_error');
+    });
 }
 
 //Функции обработки изменений профиля
