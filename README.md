@@ -8,7 +8,7 @@
 
 ## Используемые технологии
 * HTML / CSS / BEM
-* JavaScript
+* JavaScript/DOM
 
 ---
 
