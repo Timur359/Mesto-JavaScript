@@ -73,7 +73,7 @@ function resetInputError(form, config) {
   inputs.forEach((input) => hideError(input, form, config));
 }
 
-function abc(form, config) {
+function setPopupListener(form, config) {
   resetInputError(form, config);
   toggleButtonActive(form, config);
 }

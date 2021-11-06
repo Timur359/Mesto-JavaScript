@@ -52,7 +52,7 @@ function openedPopupEdit() {
   nameField.value = profileName.textContent;
   aboutField.value = profileAbout.textContent;
   openPopup(popupEdit);
-  abc(formEdit, validationConfig);
+  setPopupListener(formEdit, validationConfig);
 }
 
 editButton.addEventListener('click', openedPopupEdit);
@@ -75,7 +75,7 @@ addButton.addEventListener('click', () => {
   placeUrl.value = '';
   placeName.value = '';
   openPopup(popupAdd);
-  abc(formAdd, validationConfig);
+  setPopupListener(formAdd, validationConfig);
 });
 
 popupCloseButtonAdd.addEventListener('click', () => {
