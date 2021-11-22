@@ -49,6 +49,7 @@ const cardList = new CardsList(listElement, initialCard, createCard);
 const formAddCardElement = document.querySelector('.popup__form_add');
 const popupAdd = document.querySelector('.popup_add');
 const popupAddForm = new Popup(configPopup, popupAdd);
+popupAddForm.setEventListeners();
 
 //Функция закрытия на ESC
 
