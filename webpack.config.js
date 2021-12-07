@@ -7,7 +7,7 @@ module.exports = {
  entry: { main: './src/pages/index.js' },
  output: {
   path: path.resolve(__dirname, 'dist'),
-  filename: 'main.js',
+  filename: 'index.js',
   publicPath: '',
  },
  devServer: {
@@ -15,7 +15,7 @@ module.exports = {
    directory: path.join(__dirname, './dist'),
   },
   compress: true,
-  port: 9000,
+  port: 8080,
   open: true,
  },
  module: {
@@ -25,8 +25,6 @@ module.exports = {
     use: 'babel-loader',
     exclude: '/node_modules/',
    },
-  ],
-  rules: [
    {
     test: /\.css$/,
     use: [
