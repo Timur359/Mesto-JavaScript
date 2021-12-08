@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Место</title>
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__logo"></div>
+    </header>
+
+    <main class="main">
+        <section class="profile">
+            <div class="profile__avatar"></div>
+            <div class="profile__info">
+                <div class="profile__container">
+                    <h1 class="profile__name">Жак-Ив Кусто</h1>
+                    <button type="button" class="profile__edit-button" aria-label="Изменить информацию о себе"></button>
+                </div>
+                <h2 class="profile__about">Исследователь океана</h2>
+            </div>
+            <button type="button" class="profile__add-button" aria-label="Добавить место"></button>
+        </section>
+
+        <section class="elements"></section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2021 Mesto Russia</p>
+    </footer>
+
+    <div class="popup popup_edit">
+        <a class="popup__overlay"></a>
+        <div class="popup__content">
+            <button type="button" class="popup__close popup__close_edit" aria-label="Закрыть редактирование профиля"></button>
+            <h3 class="popup__title">Редактировать профиль</h3>
+            <form name="popupForm" class="popup__form popup__form_edit" novalidate>
+                <input name = 'name' id="userName" type="text" class="popup__input popup__input_data_name" placeholder="Имя" minlength="2" maxlength="40" required />
+                <span class="popup__input-error" id="userName-error"></span>
+                <input name = 'about' id="userAbout" type="text" class="popup__input popup__input_data_about" placeholder="О себе" minlength="2" maxlength="200" required />
+                <span class="popup__input-error" id="userAbout-error"></span>
+                <button type="submit" class="popup__button" aria-label="Сохранить">
+            Сохранить
+          </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup_add">
+        <a class="popup__overlay"></a>
+        <div class="popup__content">
+            <button type="button" class="popup__close popup__close_add" aria-label="Закрыть"></button>
+            <h3 class="popup__title">Новое место</h3>
+            <form name="popupForm" class="popup__form popup__form_add" novalidate>
+                <input name = 'name' id="nameImage" type="text" class="popup__input popup__input_place_name" placeholder="Название" minlength="2" maxlength="30" required />
+                <span class="popup__input-error" id="nameImage-error"></span>
+                <input name = 'link' id="urlImage" type="url" class="popup__input popup__input_place_url" placeholder="Ссылка на картинку" required />
+                <span class="popup__input-error" id="urlImage-error"></span>
+                <button type="submit" class="popup__button" aria-label="Сохранить">
+            Создать
+          </button>
+            </form>
+        </div>
+    </div>
+
+    <template id="template">
+      <div class="element">
+        <img
+          class="element__image"
+          src="image/image__dombay.png"
+          alt="Домбай"
+        />
+        <div class="element__card-container">
+          <h2 class="element__text">Домбай</h2>
+          <button
+            type="button"
+            class="element__button_like"
+            aria-label="Лайк"
+          ></button>
+          <button
+            type="button"
+            class="element__button_delete"
+            aria-label="Удалить"
+          ></button>
+        </div>
+      </div>
+    </template>
+
+    <div class="popup popup_zoom">
+        <a class="popup__overlay"></a>
+        <div class="popup__figure-container">
+            <figure class="popup__figure">
+                <img class="popup__image" src="#" alt="#" />
+                <figcaption class="popup__figcaption"></figcaption>
+            </figure>
+            <button type="button" class="popup__close popup__close_zoom" aria-label="Закрыть"></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
